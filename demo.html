@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width:96px;
+            height:48px;
+            border:2px solid #000;
+            border-bottom:50px solid #000 ;
+            position: absolute;
+            left:0;top:0;right:0;bottom: 0;margin:auto;
+            border-radius: 100%;
+            transition: all 2s ease;
+        }
+        div:before{
+            content: "";
+            width:8px;height:8px;
+            border:20px solid #fff;
+            position: absolute;
+            left:0;top:50%;
+            border-radius: 50%;
+            background: #000;
+        }
+        div:after{
+            content: "";
+            width:8px;height:8px;
+            border:20px solid #000;
+            position: absolute;
+            right:0;top:50%;
+            border-radius: 50%;
+            background: #fff;
+        }
+    </style>
+    <script>
+        window.onload=function (ev) {
+
+            var div=document.querySelector("div");
+            div.onmouseover=function (ev2) {
+
+                div.style.transform="rotate(180deg)";
+            }
+        }
+    </script>
+</head>
+<body>
+
+  <div>
+
+  </div>
+
+  <div> 标签的内容   </div>
+  <span></span>
+<img src="gsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571201433157&di=3e96074856bbca8fb2eeda6b94683654&imgtype=0&src=http%3A%2F%2Fimgs.logonews.cn%2Fuploads%2F2013%2F04%2Fgithub-new-logos_0.png" alt="这是一张图片" width="100">
+
+  <ul>
+
+      <li>111111</li>
+      <li>222222</li>
+      <li>33333</li>
+      <li>44444</li>
+      <li>55555</li>
+  </ul>
+
+<ol>
+    <li>aaaaa</li>
+    <li>bbbbb</li>
+    <li>ccccc</li>
+    <li>ddddd</li>
+</ol>
+
+  <a href="http://baidu.com">百度</a>
+</body>
+</html>

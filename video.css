@@ -1,0 +1,18 @@
+html,body{
+    height:100%;
+}
+.box{
+    width:80%;height:50%;border:1px solid #000;
+    position: absolute;
+    left:0;top:0;right:0;bottom: 0;margin:auto;
+}
+.key{
+    width:12.5%;height:100%;
+    border:1px solid #000;
+    box-sizing: border-box;float: left;
+    text-align: center;
+    font-size:30px;
+}
+.key:nth-child(2n){
+    background: #555;
+}
